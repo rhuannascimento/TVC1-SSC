@@ -1,0 +1,42 @@
+Projeto: Assinatura Digital e Criptografia de Mensagens
+
+Integrantes:
+    Igor Almeida Guedes
+    Rhuan Nascimento Ferreira
+
+Etapas:
+
+1. gerar_chaves.py
+   - Gera um par de chaves RSA (privada e pública).
+   - As chaves são salvas em arquivos PEM para uso posterior.
+
+2. origem.py
+   - Lê uma mensagem de texto (mensagem.txt).
+   - Gera o hash SHA-256 da mensagem.
+   - Assina o hash com a chave privada (assinatura digital).
+   - Criptografa a mensagem e a assinatura com AES (modo GCM).
+   - Salva o resultado em 'mensagem_cifrada.bin' e 'chave_aes.bin'.
+
+3. destino.py
+   - Decifra o arquivo 'mensagem_cifrada.bin' usando a chave AES.
+   - Separa a mensagem e a assinatura.
+   - Verifica a assinatura digital com a chave pública RSA.
+   - Exibe se a mensagem é autêntica e íntegra.
+
+4. main.py
+   - Executa automaticamente os três scripts acima em sequência.
+   - Mostra mensagens de progresso no terminal.
+   - Simplifica a execução do processo completo.
+
+Como executar:
+1. Instale a biblioteca necessária:
+   pip install cryptography
+
+2. Execute o arquivo principal:
+   python executavel.py
+
+Resultado esperado:
+O processo gera as chaves, assina e criptografa a mensagem, e depois decifra e verifica a assinatura digital.
+Ao final, o terminal exibirá:
+✅ Processo concluído com sucesso!
+
