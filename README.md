@@ -4,8 +4,8 @@ Projeto desenvolvido como trabalho avaliativo (TVC1) sobre criptografia, assinat
 
 ## Integrantes
 
-- **Igor Almeida Guedes**
-- **Rhuan Nascimento Ferreira**
+- **Igor Almeida Guedes - 202176007**
+- **Rhuan Nascimento Ferreira - 202176033**
 
 ## Descrição do Projeto
 
